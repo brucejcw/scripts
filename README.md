@@ -1,4 +1,4 @@
-# bash_profile
+# .bash_profile
 
 ```
 alias ll='ls -l'
