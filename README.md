@@ -11,3 +11,14 @@ alias pwdcp="PWD=$(pwd) && echo 'pwd copied to clipboard => $PWD' && echo -n $PW
 alias port='bash -c '\''PORT="$1" && lsof -i -P -n | awk "NR==1 || /:$PORT/" | awk "NR==1{print \$0;next}{print \$0 | \"grep --color=always $PORT\"}"'\'' -'
 
 ```
+
+
+# pastebot
+```
+// docker通杀
+docker stop $(docker ps -q) & docker rm $(docker ps -aq)
+
+// 符号集
+、·「」【】《》，。？；：“”￥
+
+```
