@@ -8,5 +8,5 @@ alias start='npm run start'
 alias test='npm run test'
 alias build='npm run build'
 alias pwdcp="PWD=$(pwd) && echo 'pwd copied to clipboard => $PWD' && echo -n $PWD | pbcopy"
-alias port='echo "try cmd: \nlsof -i tcp:80"'
+alias port="lsof -i -P -n | awk 'NR==1 || /:$1/' | grep $1"
 ```
