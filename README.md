@@ -21,4 +21,7 @@ docker stop $(docker ps -q) & docker rm $(docker ps -aq)
 // 符号集
 、·「」【】《》，。？；：“”￥
 
+// 淘宝npm
+--registry https://registry.npm.taobao.org
+
 ```
